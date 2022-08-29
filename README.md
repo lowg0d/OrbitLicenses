@@ -19,10 +19,10 @@ python -m venv .venv
 Then your folder should look like this:
 
 OrbitLicenses
-| bot
-| launcher.py
-│ requirements.txt
-│ .venv
+└──  bot
+└──  launcher.py
+└──  requirements.txt
+└── .venv
 │
 └── extensions
 
@@ -32,4 +32,4 @@ Then install the requirements.txt using [pip](https://pip.pypa.io/en/stable/)
 pip install -r requirements.txt
 ```
 
-Following this you have go to "\OrbitLicense\bot\config" open config.json and change "token" to your aplication token
+Following this go to "\OrbitLicense\bot\config" open config.json and change "token" to your aplication token, you can also change any setting in the configuration

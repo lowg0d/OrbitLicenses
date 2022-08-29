@@ -24,7 +24,7 @@
         "host": "localhost",
         "user": "root",
         "password": "",
-        "db": "license-test"
+        "db": "license"
     },
     "channels": {
         "logs": "1002591521087946752"

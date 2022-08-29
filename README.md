@@ -27,6 +27,7 @@ OrbitLicenses
 └── extensions
 
 Then install the requirements.txt using [pip](https://pip.pypa.io/en/stable/)
+
 ``shell
 pip install -r requirements.txt
 ```

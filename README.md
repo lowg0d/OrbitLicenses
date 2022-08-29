@@ -12,7 +12,7 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 Windows
-```cmd
+```shell
 python -m venv .venv
 .\.venv\Scripts\activate
 ```
@@ -27,7 +27,7 @@ OrbitLicenses
 └── extensions
 
 Then install the requirements.txt using [pip](https://pip.pypa.io/en/stable/)
-```cmd
+``shell
 pip install -r requirements.txt
 ```
 

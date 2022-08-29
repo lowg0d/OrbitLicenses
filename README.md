@@ -12,7 +12,7 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 ####Windows
-```poweshell
+```cmd
 python -m venv .venv
 .\.venv\Scripts\activate
 ```

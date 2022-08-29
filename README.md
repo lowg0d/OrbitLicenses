@@ -18,7 +18,7 @@ python -m venv .venv
 ```
 Then your folder should look like this:
 
-[ase](https://imgur.com/iO78MLM)
+![photo of the folder](https://imgur.com/iO78MLM)
 
 
 Then install the requirements.txt using [pip](https://pip.pypa.io/en/stable/)

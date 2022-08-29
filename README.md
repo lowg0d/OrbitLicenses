@@ -27,4 +27,9 @@ Then install the requirements.txt using [pip](https://pip.pypa.io/en/stable/)
 pip install -r requirements.txt
 ```
 
-Following this go to "\OrbitLicense\bot\config" open config.json and change "token" to your aplication token, you can also change any setting in the configuration
+Following this go to "\OrbitLicense\bot\config" open config.json and change "token" to your aplication token, you can also change any setting in the configuration.
+
+Then start the launcher script and there you go!
+```shell
+python ./launcher.py
+```

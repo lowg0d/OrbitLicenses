@@ -1,0 +1,35 @@
+{
+    "roles": {
+        "owner_id": "1001911058048483338",
+        "user_id": "1002276645375316019"
+    },
+
+    "logger": {
+        "debug": false,
+        "save-logs": false
+    },
+
+    "colors": {
+        "main": "7f65e4",
+        "correct": "33FF00",
+        "wrong": "FF0000",
+        "intermediate": "FFBE00"
+    },
+
+    "messages": {
+        "no_permissions": "<:icons_outage:996016805049028649> Insuficient Permissions"
+    },
+
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "db": "license-test"
+    },
+    "channels": {
+        "logs": "1002591521087946752"
+    },
+    
+    "default_presence": "Orbit Licenses v &version", 
+    "token": "MTAwMzEzNDA3MTE1MDQ4MTQ2MQ.Gg4Il8.U0fW1gjA-4788BNx2dzIeCgCLKofyTXtTYPA0M"
+}

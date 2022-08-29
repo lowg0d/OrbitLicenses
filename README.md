@@ -18,7 +18,7 @@ python -m venv .venv
 ```
 Then your folder should look like this:
 
->*OrbitLicenses
+OrbitLicenses
 │ bot
 | launcher.py
 │ requirements.txt

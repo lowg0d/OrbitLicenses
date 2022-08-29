@@ -19,6 +19,7 @@ python -m venv .venv
 Then your folder should look like this:
 
 OrbitLicenses
+
 │ bot
 
 | launcher.py

@@ -27,7 +27,7 @@ Then install the requirements.txt using [pip](https://pip.pypa.io/en/stable/)
 pip install -r requirements.txt
 ```
 
-Following this go to "\OrbitLicense\bot\config" open config.json and change "token" to your aplication token and change the [MySql](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04) data,  for install mysql in widonws [click here](https://www.apachefriends.org/download.html), you can also change any setting in the configuration.
+Following this go to "\OrbitLicense\bot\config" open config.json and change "token" to your aplication token and change the [MySql](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04) data,  for install mysql on widonws [click here](https://www.apachefriends.org/download.html), you can also change any setting in the configuration.
 
 Then start the launcher script and there you go!
 ```shell

@@ -10,7 +10,6 @@ import pytz
 from rich import print
 from datetime import datetime
 import bot.utils.cc as cc
-import bot.managers.config_mg as config
 ##################################################################
 
 

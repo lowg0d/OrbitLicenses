@@ -1,7 +1,3 @@
-import hikari
-import asyncio
-import lightbulb
-import bot.utils.cc as cc
 import bot.utils.keygenerator as keygen
 import bot.managers.mysql_mg as sql_mg
 

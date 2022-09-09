@@ -1,6 +1,3 @@
-"""
-ORBIT LICENSES
-"""
 import os
 import sys
 import time
@@ -10,9 +7,9 @@ import fnmatch
 import aiohttp
 import asyncio
 import lightbulb
-import bot
 import bot.utils.cc as cc
 from bot import __version__
+import bot.managers.logger_mg as logs
 import bot.managers.mysql_mg as sql_mg
 
 ########################
@@ -42,18 +39,20 @@ class Bot:
         async def on_starting(event: hikari.StartingEvent) -> None:
             self.bot.d.aio_session = aiohttp.ClientSession()
             
-            embed_message = hikari.Embed(
-                                title=f"OrbitLicenses v{__version__}",
-                                description=f"Bot Sucesfully Started\n>>> MySql connection: :green_circle:",
-                                color=cc.main_color)
-            embed_message.set_footer(f"OrbitLicenses v{__version__} - by @lowg0d#9605")
-            
-            #await self.bot.rest.create_message(1002591521087946752, embed_message)
+            try:
+                sql_mg.connect()
+                logs.out("Sucesfully connected to the database")
+            except:
+                logs.out("Error connecting to the database")
+                sys.exit()
+            sql_mg.check_tables()
+
                 
         # stop aio session
         @self.bot.listen()
         async def on_stopping(event: hikari.StoppingEvent) -> None:
             await self.bot.aio_session.close()
+            sys.exit()
         
         # run the bot
         self.bot.run(activity=hikari.Activity(
@@ -62,7 +61,6 @@ class Bot:
                     asyncio_debug=True,
                     coroutine_tracking_depth=20,
                     propagate_interrupts=True)
-        
     
     def load_extensions(self):
         

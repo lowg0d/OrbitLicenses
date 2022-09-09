@@ -1,14 +1,4 @@
 {
-    "roles": {
-        "owner_id": "1001911058048483338",
-        "user_id": "1002276645375316019"
-    },
-
-    "logger": {
-        "debug": false,
-        "save-logs": false
-    },
-
     "colors": {
         "main": "7f65e4",
         "correct": "33FF00",
@@ -16,20 +6,34 @@
         "intermediate": "FFBE00"
     },
 
-    "messages": {
-        "no_permissions": "<:icons_outage:996016805049028649> Insuficient Permissions"
-    },
-
     "mysql": {
         "host": "localhost",
         "user": "root",
         "password": "",
-        "db": "license"
+        "db": "licenses-database"
     },
+
     "channels": {
         "logs": "1002591521087946752"
     },
-    
-    "default_presence": "Orbit Licenses v &version", 
-    "token": "TOKEN"
+
+    "messages": {
+        "no_permissions": "<:icons_outage:996016805049028649> Insuficient Permissions",
+        
+        "you_own_license": "You own [License#&id] already!",
+        "user_own_license": "@&user's owns [license#&id] already",
+        "sucesfully_generated_license": "Sucesfully generated a new license",
+        "sucesfully_generated_license_for": "[License#&id] sucesfully generated for @&user",
+        "sucesfully_deleted_license": "[License#&id] Sucesfully deleted!",
+        "sucesfully_regenerated": "[License#&id] Sucesfully Regenerated!",
+        "user_not_license_registered": "@&user has not license registered."
+    },
+
+    "logger": {
+        "debug": false,
+        "save-logs": false
+    },
+
+    "default_presence": "OL - v&version", 
+    "token": "token"
 }
